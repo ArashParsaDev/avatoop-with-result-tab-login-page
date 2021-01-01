@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ronaldo"
+                app:layout_collapseMode="parallax"
+                />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="درباره کریستیانو رونالدو"
+                android:textSize="16dp"
+                android:fontFamily="@font/iransans_bold"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl"
+                android:layout_gravity="right"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کریستیانو رونالدو با ملیت کشور پرتغال، 35 سال (5 فوریه 1985) سن دارد، قد او 187 سانتی‌متر می‌باشد. کریستیانو رونالدو به عنوان مهاجم برای تیم خود بازی می‌کند و از هر دو پای خود به خوبی بهره می‌گیرد .
+
+این بازیکن در حال حاضر با شماره 7 برای تیم فوتبال یوونتوس و همچنین تیم ملی کشور خود یعنی پرتغال بازی می‌کند.
+
+آخرین بازی کریستیانو رونالدو برای تیم فوتبال یوونتوس مقابل تیم فیورنتینا می‌باشد. این بازی با نتیجه یوونتوس (0 - 3) فیورنتینا به پایان رسید. کریستیانو رونالدو در این مسابقه 90 دقیقه بازی کرد و نمره 7.4 کسب کرد.
+
+شما در صفحه بازیکن می‌توانید مشخصات فردی بازیکن، بازی‌های وی و همچنین آمار کامل بازیکن را به صورت فصل به فصل و بازی به بازی مشاهده کنید."
+                android:fontFamily="@font/iransans_light"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl"
+                android:layout_gravity="right"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

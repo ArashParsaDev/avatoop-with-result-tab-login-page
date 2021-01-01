@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_hot_topic"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment"
+    >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="6dp"
+                >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:layoutDirection="rtl">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            app:cardCornerRadius="8dp"
+                            android:layout_margin="5dp"
+                            android:elevation="10dp">
+                            <ImageView
+                                android:id="@+id/iv_hot_topic"
+                                android:layout_height="130dp"
+                                android:layout_width="130dp"
+                                tools:src="@mipmap/ic_launcher_round"
+                                android:scaleType="fitXY"
+
+                                />
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="8dp"
+                            >
+                            <TextView
+                                android:id="@+id/tv_hot_topic_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/iransans_bold"
+                                tools:text="تسنیم"
+                                />
+                            <TextView
+                                android:id="@+id/tv_hot_topic_description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/iransans_light"
+                                tools:text="ابراهیمی: دوست داریم با بازگشت پرسپولیس به لیگ هم صدرنشین باشیم/ وظایف تهاجمی‌ام کمتر شده است"
+                                />
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+            </androidx.cardview.widget.CardView>
+</FrameLayout>

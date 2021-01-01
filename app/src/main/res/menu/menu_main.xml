@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="پروفایل"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:id="@+id/menuItem_profile"/>
+    <item android:title="بازی ها"
+        android:icon="@drawable/ic_baseline_games_24"
+        android:id="@+id/menuItem_games"/>
+    <item android:title="اخبار"
+        android:icon="@drawable/ic_baseline_fiber_news_24"
+        android:id="@+id/menuItem_news"/>
+    <item android:title="صفحه اصلی"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/menuItem_home"/>
+</menu>

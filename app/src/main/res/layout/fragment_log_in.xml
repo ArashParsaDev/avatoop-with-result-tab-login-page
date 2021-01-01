@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:padding="12dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ava_toop_logo_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="ورود به حساب کاربری"
+            android:fontFamily="@font/iransans_bold"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@drawable/view_bg_btn"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="شماره موبایل یا ایمیل"
+            app:startIconDrawable="@drawable/ic_phone"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:fontFamily="@font/iransans_bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/et_bg"
+            android:hint="کلمه عبور"
+            app:startIconDrawable="@drawable/ic_login_lock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransans_bold"
+
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/iransans_bold"
+
+            android:text="ورود" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login_forget_password"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="رمز را فراموش کردید؟"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/iransans_light"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="تاکنون عضو شده اید؟"
+            android:fontFamily="@font/iransans_bold"
+            />
+
+        <Button
+            android:id="@+id/btn_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/iransans_bold"
+            android:text="ثبت نام" />
+    </LinearLayout>
+</RelativeLayout>
