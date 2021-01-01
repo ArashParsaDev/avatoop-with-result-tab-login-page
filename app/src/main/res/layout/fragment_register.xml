@@ -38,6 +38,12 @@
 
             android:textSize="18sp" />
 
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@drawable/view_bg_btn"
+            />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -195,10 +201,11 @@
                 app:startIconDrawable="@drawable/ic_phone">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_mobile"
+                    android:id="@+id/et_login_mobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/iransans_bold"
+                    android:inputType = "number"
                     />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -211,7 +218,7 @@
                 app:startIconDrawable="@drawable/ic_login_lock">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_password"
+                    android:id="@+id/et_login_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"

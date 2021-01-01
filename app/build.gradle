@@ -50,6 +50,10 @@ dependencies {
     //like button
     implementation 'com.github.jd-alexander:LikeButton:0.2.3'
 
+    //volley
+    implementation 'com.android.volley:volley:1.1.1'
+
+
 
 
 

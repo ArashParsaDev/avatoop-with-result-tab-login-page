@@ -20,7 +20,6 @@ import com.example.avatoop.R;
 public class ProfileFragment extends Fragment {
 
     View myFragment;
-    Button registerButton;
     Button loginButton;
 
 
@@ -28,19 +27,8 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         myFragment =  inflater.inflate(R.layout.fragment_profile, container, false);
-        registerButton = myFragment.findViewById(R.id.btn_profile_register);
         loginButton = myFragment.findViewById(R.id.btn_profile_log_in);
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              //  Toast.makeText(getActivity(), "sadsd", Toast.LENGTH_SHORT).show();
-                RegisterFragment registerFragment = new RegisterFragment();
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.frame_main_fragment_container,registerFragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-            }
-        });
+
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override

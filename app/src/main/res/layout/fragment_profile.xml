@@ -36,19 +36,7 @@
 
            <LinearLayout android:layout_height="wrap_content"
                android:layout_width="match_parent">
-               <com.google.android.material.button.MaterialButton
-                   android:id="@+id/btn_profile_register"
-                   android:layout_width="0dp"
-                   android:layout_weight="0.25"
-                   android:layout_height="56dp"
-                   android:layout_marginTop="20dp"
-                   android:layout_marginLeft="4dp"
-                   android:fontFamily="@font/iransans_bold"
-                   android:text="ثبت نام"
-                   android:textColor="@color/white"
-                   android:textSize="16dp"
-                   android:foreground="?android:attr/selectableItemBackground"
-                   />
+
 
                <com.google.android.material.button.MaterialButton
                    android:id="@+id/btn_profile_log_in"
